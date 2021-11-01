@@ -4,11 +4,12 @@ import { useEffect, useState } from 'react';
 import { api } from "../utils/api";
 
 // Styles --
-import { Main, Header } from "../Components/Styles/Home.Style";
+import { Main, Header, HeadlineOne, HeadlineTwo, Content } from "../Components/Styles/Home.Style";
 
 // Components --
 import Banner from "../Components/Banner";
 import Face from "../Components/Face";
+import Skills from '../Components/Skills';
 import About from "../Components/About";
 
 // Images --
@@ -36,7 +37,12 @@ function Home() {
                 <Banner id="header" src={banner} />
                 <Face id="face" src={face} />
             </Header>
-            <About />
+            <Content>
+                <HeadlineOne>Lucas Mace</HeadlineOne>
+                <HeadlineTwo>Full Stack Web Developer</HeadlineTwo>
+                <Skills />
+                {/* <About /> */}
+            </Content>
         </Main>
     );
 }
