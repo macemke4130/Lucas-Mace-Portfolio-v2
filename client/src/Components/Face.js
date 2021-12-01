@@ -1,5 +1,6 @@
 import { FaceImg } from "./Styles/Home.Style";
 
+
 function Header(props) {
     
 	return (
