@@ -4,10 +4,18 @@
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
 html {
     font-size: 16px;
 }
 
 body {
-    background-color: #f8c5bf;
+    background-color: #bfdcf8;
+}
+
+#root {
+    height: 100%;
 }

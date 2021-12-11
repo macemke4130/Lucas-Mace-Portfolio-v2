@@ -5,7 +5,7 @@ export const Main = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: ${mainColor};
+    width: 100%;
 `;
 
 export const Header = styled.header`
@@ -21,7 +21,7 @@ export const BannerImg = styled.img`
     height: 15rem;
     width: 100%;
     object-fit: cover;
-    object-position: bottom;
+    object-position: center;
 `;
 
 export const FaceImg = styled.img`
@@ -43,6 +43,7 @@ export const HeadlineOne = styled.h1`
 export const HeadlineTwo = styled.h2`
     font-family: ${font};
     font-size: 2rem;
+    font-weight: 500;
     text-align: center;
     margin: 0;
 `;
@@ -51,5 +52,6 @@ export const Content = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     max-width: 1200px;
 `;

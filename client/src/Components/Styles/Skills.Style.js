@@ -23,7 +23,7 @@ export const SkillCard = styled.div`
     border-bottom-right-radius: 0;
     box-shadow: 0.2em 0.2em 0 black;
     padding: 1rem;
-    margin: 0.5rem;
+    margin: 0.75rem 2rem;
     width: 10rem;
     height: 4rem;
     text-align: center;
@@ -38,6 +38,8 @@ export const SkillCard = styled.div`
 `;
 
 export const SkillText = styled.p`
-    /* padding: 1rem;
-    margin: 1rem; */
+    font-weight: 500;
+    line-height: 1.5rem;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
 `;
