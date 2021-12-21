@@ -6,10 +6,12 @@ import "./styles.css";
 import Home from "./Pages/Home";
 import Bio from "./Pages/Bio";
 import Contact from "./Pages/Contact";
-import FooterBar from "./Components/Footer";
+import Projects from "./Pages/Projects";
+
 
 // Components --
 import Nav from './Components/Nav';
+import FooterBar from "./Components/Footer";
 
 // Styles --
 import { Main, Content, HeadlineOne, HeadlineTwo } from "./Components/Styles/Home.Style";
@@ -17,38 +19,40 @@ import HeaderContainer from './Components/Header';
 
 function App() {
 	return (
-		<Main>
-			<HeaderContainer />
-			<Content>
-				<HeadlineOne>Lucas Mace</HeadlineOne>
-				<HeadlineTwo>Full Stack Web Developer</HeadlineTwo>
-				<Router>
-					<Switch>
-						<Route exact path="/">
-							<Nav />
-							<Home />
-						</Route>
-						<Route path="/bio">
-							<Nav />
-							<Bio />
-						</Route>
-						<Route path="/projects">
-							<Nav />
+		<>
+			<Main>
+				<HeaderContainer />
+				<Content>
+					<HeadlineOne>Lucas Mace</HeadlineOne>
+					<HeadlineTwo>Full Stack Web Developer</HeadlineTwo>
+					<Router>
+						<Switch>
+							<Route exact path="/">
+								<Nav />
+								<Home />
+							</Route>
+							<Route path="/bio">
+								<Nav />
+								<Bio />
+							</Route>
+							<Route path="/projects">
+								<Nav />
+								<Projects />
+							</Route>
+							<Route path="/resume">
+								<Nav />
 
-						</Route>
-						<Route path="/resume">
-							<Nav />
-
-						</Route>
-						<Route path="/contact">
-							<Nav />
-							<Contact />
-						</Route>
-					</Switch>
-				</Router>
-			</Content>
+							</Route>
+							<Route path="/contact">
+								<Nav />
+								<Contact />
+							</Route>
+						</Switch>
+					</Router>
+				</Content>
+			</Main>
 			<FooterBar />
-		</Main>
+		</>
 	)
 }
 

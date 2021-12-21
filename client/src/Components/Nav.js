@@ -8,22 +8,15 @@ function Nav() {
     const history = useHistory();
     const location = useLocation();
 
-    const handleSkillsClick = () => {
-        history.push("/");
-    }
-
-    const handleBioClick = () => {
-        history.push("/bio")
-    }
-
-    const handleContactClick = () => {
-        history.push("/contact")
+    const handleNavClick = (event) => {
+        const path = event.target.innerText.toLowerCase();
+        history.push(path === "skills" ? "/" : "/" + path);
     }
 
     // Get path from URL and set pageTitle --
     useEffect(() => {
         // Strips the "/" from the url --
-        const route = location.pathname.substr(1, location.pathname.length);
+        const route = location.pathname.substring(1, location.pathname.length);
 
         // If route is blank (root), populate "Skills". Otherwise populate with route --
         setPageTitle(route === "" ? "skills" : route);
@@ -32,11 +25,11 @@ function Nav() {
     return (
         <CenteredFlexCol>
             <CenteredNavRow>
-                {pageTitle === "skills" ? "" : <NavButton onClick={handleSkillsClick}>Skills</NavButton>}
-                {pageTitle === "bio" ? "" : <NavButton onClick={handleBioClick}>Bio</NavButton>}
-                {pageTitle === "projects" ? "" : <NavButton>Projects</NavButton>}
-                {pageTitle === "resume" ? "" : <NavButton>Resume</NavButton>}
-                {pageTitle === "contact" ? "" : <NavButton onClick={handleContactClick}>Contact</NavButton>}
+                {pageTitle === "skills" ? "" : <NavButton onClick={handleNavClick}>Skills</NavButton>}
+                {pageTitle === "bio" ? "" : <NavButton onClick={handleNavClick}>Bio</NavButton>}
+                {pageTitle === "projects" ? "" : <NavButton onClick={handleNavClick}>Projects</NavButton>}
+                {pageTitle === "resume" ? "" : <NavButton onClick={handleNavClick}>Resume</NavButton>}
+                {pageTitle === "contact" ? "" : <NavButton onClick={handleNavClick}>Contact</NavButton>}
             </CenteredNavRow>
             <PageTitle>{pageTitle}</PageTitle>
         </CenteredFlexCol>
