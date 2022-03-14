@@ -63,7 +63,7 @@ function Projects() {
                 <ProjectTitle>GitHub</ProjectTitle>
                 <ProjectImage src={ghr} />
                 <ProjectDescription>Just a link to my GitHub Profile. Plenty of small projects from school here. Poke around if you'd like.</ProjectDescription>
-                <GitHubLink href="https://github.com/macemke4130/Grams-Per-Dollar" target="_blank">GitHub Repository</GitHubLink>
+                <GitHubLink href="https://github.com/macemke4130?tab=repositories" target="_blank">GitHub Repository</GitHubLink>
             </ProjectContainer>
         </Grid >
     );
