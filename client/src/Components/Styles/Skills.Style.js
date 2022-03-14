@@ -43,3 +43,8 @@ export const SkillText = styled.p`
     transition-duration: 250ms;
     transition-timing-function: ease-in-out;
 `;
+
+export const SkillAnchor = styled.a`
+    color: black;
+    text-decoration: none;
+`;

@@ -8,7 +8,7 @@ import { SkillsContainer } from "./Styles/Skills.Style";
 import Skill from './Skill';
 
 function Skills() {
-    const [skills] = useState(["React", "GraphQL", "TypeScript", "JavaScript", "MySQL", "Node JS", "Express JS", "JSON", "JQuery", "REST", "HTML", "CSS", "PHP", "GitHub", "Adobe Suite"]);
+    const [skills] = useState(["React", "GraphQL", "TypeScript", "JavaScript", "MySQL", "Node JS", "Express JS", "JSON", "JQuery", "REST", "HTML", "CSS", "PHP", "GitHub", "VTEX", "Adobe Suite"]);
 
     return (
         <>

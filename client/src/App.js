@@ -7,6 +7,7 @@ import Home from "./Pages/Home";
 import Bio from "./Pages/Bio";
 import Contact from "./Pages/Contact";
 import Projects from "./Pages/Projects";
+import Resume from './Pages/Resume';
 
 
 // Components --
@@ -41,7 +42,7 @@ function App() {
 							</Route>
 							<Route path="/resume">
 								<Nav />
-
+								<Resume />
 							</Route>
 							<Route path="/contact">
 								<Nav />

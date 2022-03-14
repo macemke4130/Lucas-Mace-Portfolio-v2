@@ -9,12 +9,16 @@ function Nav() {
     const location = useLocation();
 
     const handleNavClick = (event) => {
+        // Isolates Nav Button Inner Text --
         const path = event.target.innerText.toLowerCase();
+
+        // Gets URL --
         history.push(path === "skills" ? "/" : "/" + path);
     }
 
     // Get path from URL and set pageTitle --
     useEffect(() => {
+
         // Strips the "/" from the url --
         const route = location.pathname.substring(1, location.pathname.length);
 
