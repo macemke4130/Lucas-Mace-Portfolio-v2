@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Styles --
-import { Grid, ProjectContainer, ProjectTitle, ProjectImage, ProjectDescription, TechStackTitle, TechStack, LiveProjectLink, GitHubLink } from '../Components/Styles/Projects.Style';
+import { Grid, ProjectContainer, ProjectTitle, ProjectImage, ProjectDescription, TechStackTitle, TechStack, LiveProjectLink, GitHubLink, Review } from '../Components/Styles/Projects.Style';
 
 // Images --
 import tcsi from "../images/tcsi.jpg";
@@ -35,11 +35,10 @@ function Projects() {
             <ProjectContainer>
                 <ProjectTitle>Name That Part</ProjectTitle>
                 <ProjectImage src={ntp} />
-                <ProjectDescription>A game designed for bicycle nerds, by a bicycle nerd. Users are shown a small bicycle part and 4 options to choose from. Images are loaded in advance on each selection to keep the game play inturrupted. Users compete for a high score and the game gets very compettitive. Stats are collected at the end of each game and sent to the database. This was truly a fun game to design.</ProjectDescription>
-                <ProjectDescription>"Name That Part is a fun, and surprisingly tough game." - <a href="https://bikerumor.com/think-youre-a-knowledgeable-bike-mechanic-prove-it-with-name-that-part-game/" target="_blank">BikeRumor</a></ProjectDescription>
-                <ProjectDescription>"Challenging." - <a href="https://theradavist.com/2022/03/radar-roundup-reeb-full-suspension-sustainable-cambium-giro-flat-latch-engin-cranks-and-colored-xc-iii/" target="_blank">The Radavist</a></ProjectDescription>
-                <ProjectDescription>"This one is pure sadism." - <a href="https://www.pinkbike.com/news/slack-randoms-moto-inspired-hooligan-ebike-fixed-gear-skateboard-bikes-jet-engine-go-karts-and-more.html" target="_blank">PinkBike</a></ProjectDescription>
-
+                <Review>"Name That Part is a fun, and surprisingly tough game." - <a href="https://bikerumor.com/think-youre-a-knowledgeable-bike-mechanic-prove-it-with-name-that-part-game/" target="_blank" rel="noreferrer">BikeRumor</a></Review>
+                <Review>"Challenging." - <a href="https://theradavist.com/2022/03/radar-roundup-reeb-full-suspension-sustainable-cambium-giro-flat-latch-engin-cranks-and-colored-xc-iii/" target="_blank" rel="noreferrer">The Radavist</a></Review>
+                <Review>"This one is pure sadism." - <a href="https://www.pinkbike.com/news/slack-randoms-moto-inspired-hooligan-ebike-fixed-gear-skateboard-bikes-jet-engine-go-karts-and-more.html" target="_blank" rel="noreferrer">PinkBike</a></Review>
+                <ProjectDescription>A game designed for bicycle nerds, by a bicycle nerd. Users are shown a small bicycle part and 4 options to choose from. Images are loaded in advance on each selection to keep the game play inturrupted. Stats are collected at the end of each game and sent to the database.</ProjectDescription>
                 <TechStackTitle>Tech Stack</TechStackTitle>
                 <TechStack>React, GraphQL, Express, MySQL, Styled Components, React Router</TechStack>
                 <LiveProjectLink href="http://www.namethatpart.com/" target="_blank">Live Project</LiveProjectLink>

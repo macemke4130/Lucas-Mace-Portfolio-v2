@@ -67,3 +67,10 @@ export const GitHubLink = styled.a`
     text-align: center;
     text-decoration: underline;
 `;
+
+export const Review = styled.p`
+font-family: ${font};
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0.25rem 0;
+`;
