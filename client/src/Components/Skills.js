@@ -8,14 +8,14 @@ import { SkillsContainer } from "./Styles/Skills.Style";
 import Skill from './Skill';
 
 function Skills() {
-    const [skills] = useState(["React", "GraphQL", "TypeScript", "JavaScript", "MySQL", "Node JS", "Express JS", "JSON", "JQuery", "REST", "HTML", "CSS", "PHP", "GitHub", "VTEX", "Adobe Suite"]);
+    const [skills] = useState(["React", "GraphQL", "TypeScript", "JavaScript", "MySQL", "Node JS", "Express JS", "JSON", "JQuery", "REST", "HTML", "CSS", "Styled Components", "PHP", "GitHub", "Heroku", "VTEX", "Adobe Suite"]);
 
     return (
         <>
             <SkillsContainer>
-                { skills.map(skill => (
+                {skills.map(skill => (
                     <Skill key={skill + "key"} title={skill} />
-                )) }
+                ))}
             </SkillsContainer>
         </>
     );
