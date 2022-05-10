@@ -10,6 +10,7 @@ import ntp from "../images/ntp.jpg";
 import cbp from "../images/cbp.jpg";
 import gpd from "../images/gpd.jpg";
 import ghr from "../images/ghr.jpg";
+import dn from "../images/dn.jpg";
 
 function Projects() {
     return (
@@ -22,6 +23,15 @@ function Projects() {
                 <TechStack>Vanilla JS, GraphQL, Express, MySQL</TechStack>
                 <LiveProjectLink href="http://www.twincitiessendit.com" target="_blank">Live Project</LiveProjectLink>
                 <GitHubLink href="https://github.com/macemke4130/Twin-Cities-Send-It" target="_blank">GitHub Repository</GitHubLink>
+            </ProjectContainer>
+            <ProjectContainer>
+                <ProjectTitle>Dynamic Navigation</ProjectTitle>
+                <ProjectImage src={dn} />
+                <ProjectDescription>A scaling and self routing navigation menu. JSON data is fed in, a fully dynamic navigation is displayed, complete with submenus.</ProjectDescription>
+                <TechStackTitle>Tech Stack</TechStackTitle>
+                <TechStack>React, React Router</TechStack>
+                <LiveProjectLink href="https://dynamic-nav.herokuapp.com/" target="_blank">Live Project</LiveProjectLink>
+                <GitHubLink href="https://github.com/macemke4130/Navigation-Menu" target="_blank">GitHub Repository</GitHubLink>
             </ProjectContainer>
             <ProjectContainer>
                 <ProjectTitle>What's Still Good?</ProjectTitle>
