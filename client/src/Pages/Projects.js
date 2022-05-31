@@ -16,13 +16,16 @@ function Projects() {
     return (
         <Grid>
             <ProjectContainer>
-                <ProjectTitle>Twin Cities Send It</ProjectTitle>
-                <ProjectImage src={tcsi} />
-                <ProjectDescription>Database of all grass hills in the Twin Cities and greater surrounding areas that are suitable to ride your bicycle down. Why? Because it's really fun. I built this project to familiarize myself with GraphQL. Complete with photos, videos and maps to each hill, this has become a favorite passion project of mine.</ProjectDescription>
+                <ProjectTitle>Name That Part</ProjectTitle>
+                <ProjectImage src={ntp} />
+                <Review>"Name That Part is a fun, and surprisingly tough game." - <a href="https://bikerumor.com/think-youre-a-knowledgeable-bike-mechanic-prove-it-with-name-that-part-game/" target="_blank" rel="noreferrer">BikeRumor</a></Review>
+                <Review>"Challenging." - <a href="https://theradavist.com/2022/03/radar-roundup-reeb-full-suspension-sustainable-cambium-giro-flat-latch-engin-cranks-and-colored-xc-iii/" target="_blank" rel="noreferrer">The Radavist</a></Review>
+                <Review>"This one is pure sadism." - <a href="https://www.pinkbike.com/news/slack-randoms-moto-inspired-hooligan-ebike-fixed-gear-skateboard-bikes-jet-engine-go-karts-and-more.html" target="_blank" rel="noreferrer">PinkBike</a></Review>
+                <ProjectDescription>A game designed for bicycle nerds, by a bicycle nerd. Users are shown a small bicycle part and 4 options to choose from. Images are loaded in advance on each selection to keep the game play inturrupted. Stats are collected at the end of each game and sent to the database.</ProjectDescription>
                 <TechStackTitle>Tech Stack</TechStackTitle>
-                <TechStack>Vanilla JS, GraphQL, Express, MySQL</TechStack>
-                <LiveProjectLink href="http://www.twincitiessendit.com" target="_blank">Live Project</LiveProjectLink>
-                <GitHubLink href="https://github.com/macemke4130/Twin-Cities-Send-It" target="_blank">GitHub Repository</GitHubLink>
+                <TechStack>React, GraphQL, Express, MySQL, Styled Components, React Router</TechStack>
+                <LiveProjectLink href="http://www.namethatpart.com/" target="_blank">Live Project</LiveProjectLink>
+                <GitHubLink href="https://github.com/macemke4130/Bicycle-Mechanic-Game-v3" target="_blank">GitHub Repository</GitHubLink>
             </ProjectContainer>
             <ProjectContainer>
                 <ProjectTitle>Dynamic Navigation</ProjectTitle>
@@ -34,6 +37,15 @@ function Projects() {
                 <GitHubLink href="https://github.com/macemke4130/Navigation-Menu" target="_blank">GitHub Repository</GitHubLink>
             </ProjectContainer>
             <ProjectContainer>
+                <ProjectTitle>Twin Cities Send It</ProjectTitle>
+                <ProjectImage src={tcsi} />
+                <ProjectDescription>Database of all grass hills in the Twin Cities and greater surrounding areas that are suitable to ride your bicycle down. Why? Because it's really fun. I built this project to familiarize myself with GraphQL. Complete with photos, videos and maps to each hill, this has become a favorite passion project of mine.</ProjectDescription>
+                <TechStackTitle>Tech Stack</TechStackTitle>
+                <TechStack>Vanilla JS, GraphQL, Express, MySQL</TechStack>
+                <LiveProjectLink href="http://www.twincitiessendit.com" target="_blank">Live Project</LiveProjectLink>
+                <GitHubLink href="https://github.com/macemke4130/Twin-Cities-Send-It" target="_blank">GitHub Repository</GitHubLink>
+            </ProjectContainer>
+            <ProjectContainer>
                 <ProjectTitle>What's Still Good?</ProjectTitle>
                 <ProjectImage src={wsg} />
                 <ProjectDescription>Full Stack Application for personal use listing the expiration dates of all the food in my kitchen so I may better plan my meals and reduce food waste.</ProjectDescription>
@@ -41,18 +53,6 @@ function Projects() {
                 <TechStack>React, GraphQL, Express, MySQL, Day.js</TechStack>
                 <LiveProjectLink href="http://whats-still-good.herokuapp.com/" target="_blank">Live Project</LiveProjectLink>
                 <GitHubLink href="https://github.com/macemke4130/whats-good" target="_blank">GitHub Repository</GitHubLink>
-            </ProjectContainer>
-            <ProjectContainer>
-                <ProjectTitle>Name That Part</ProjectTitle>
-                <ProjectImage src={ntp} />
-                <Review>"Name That Part is a fun, and surprisingly tough game." - <a href="https://bikerumor.com/think-youre-a-knowledgeable-bike-mechanic-prove-it-with-name-that-part-game/" target="_blank" rel="noreferrer">BikeRumor</a></Review>
-                <Review>"Challenging." - <a href="https://theradavist.com/2022/03/radar-roundup-reeb-full-suspension-sustainable-cambium-giro-flat-latch-engin-cranks-and-colored-xc-iii/" target="_blank" rel="noreferrer">The Radavist</a></Review>
-                <Review>"This one is pure sadism." - <a href="https://www.pinkbike.com/news/slack-randoms-moto-inspired-hooligan-ebike-fixed-gear-skateboard-bikes-jet-engine-go-karts-and-more.html" target="_blank" rel="noreferrer">PinkBike</a></Review>
-                <ProjectDescription>A game designed for bicycle nerds, by a bicycle nerd. Users are shown a small bicycle part and 4 options to choose from. Images are loaded in advance on each selection to keep the game play inturrupted. Stats are collected at the end of each game and sent to the database.</ProjectDescription>
-                <TechStackTitle>Tech Stack</TechStackTitle>
-                <TechStack>React, GraphQL, Express, MySQL, Styled Components, React Router</TechStack>
-                <LiveProjectLink href="http://www.namethatpart.com/" target="_blank">Live Project</LiveProjectLink>
-                <GitHubLink href="https://github.com/macemke4130/Bicycle-Mechanic-Game-v3" target="_blank">GitHub Repository</GitHubLink>
             </ProjectContainer>
             <ProjectContainer>
                 <ProjectTitle>Coffee Brewing Profile App</ProjectTitle>

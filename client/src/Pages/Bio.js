@@ -7,8 +7,9 @@ function Bio() {
     return (
         <>
             <Paragraph>Hello! My name is Lucas.</Paragraph>
-            <Paragraph>I am a Full Stack Web Developer who currently works primarily as a Front End Web and React Developer
-                for Erik's Bike Shop, the largest (depending on who you ask) bicycle and Winter sports shop in America.
+            <Paragraph>I have over 6 years of professional development experience.
+                I am a Full Stack Web Developer who currently works as a Front End Web, React and UX/UI Developer
+                for Erik's Bike Shop, the largest (depending on how you ask) bicycle and Winter sports shop in America.
             </Paragraph>
             <Paragraph>My favorite tech stack currently is React, GraphQL, Express and MySQL. If you're a bicycle nerd,
                 you may enjoy my <Anchor href="http://www.namethatpart.com/" target="_blank">Name That Part</Anchor> game
