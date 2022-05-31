@@ -13,7 +13,6 @@ function Resume() {
                     <Skill title="Download" />
                 </SkillAnchor>
             </CenteredFlexRow>
-
         </>
     );
 }
