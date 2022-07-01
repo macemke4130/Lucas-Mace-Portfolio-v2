@@ -1,7 +1,37 @@
 import styled from 'styled-components';
 import { font, compColor } from "./SSOT.Style";
 
-export const CenteredNavRow = styled.div`
+export const KeyboardUserContainer = styled.a`
+    display: flex;
+    align-items: center;
+    font-family: ${font};
+    font-weight: bold;
+    font-size: 0.9rem;
+    position: absolute;
+    top: -100%;
+    text-align: center;
+    padding: 1.25rem;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
+    left: 2rem;
+    text-decoration: none;
+    color: white;
+    aspect-ratio: 1;
+    border: 0.5em solid #bfdcf8;;
+    transform: rotate(180deg);
+    z-index: 2;
+
+    transition-property: top, transform;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+
+    &:focus {
+        top: 1rem ;
+        transform: rotate(-12deg);
+    }
+`;
+
+export const CenteredNavRow = styled.nav`
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -9,7 +39,7 @@ export const CenteredNavRow = styled.div`
     flex-wrap: wrap;
 `;
 
-export const NavButton = styled.div`
+export const NavButton = styled.button`
     width: 8rem;
     text-align: center;
     z-index: 2;
@@ -17,6 +47,7 @@ export const NavButton = styled.div`
     font-family: ${font};
     font-size: 1rem;
     cursor: pointer;
+    text-decoration: none;
     margin: 0.5rem;
     padding: 0.25rem 1rem;
     border: 1px solid black;

@@ -16,6 +16,11 @@ function Nav() {
         history.push(path === "skills" ? "/" : "/" + path);
     }
 
+    const handleKeyUp = (event) => {
+        if (event.code !== "Enter") return;
+        handleNavClick(event);
+    }
+
     // Get path from URL and set pageTitle --
     useEffect(() => {
 
@@ -29,11 +34,11 @@ function Nav() {
     return (
         <CenteredFlexCol>
             <CenteredNavRow>
-                {pageTitle === "skills" ? "" : <NavButton onClick={handleNavClick}>Skills</NavButton>}
-                {pageTitle === "bio" ? "" : <NavButton onClick={handleNavClick}>Bio</NavButton>}
-                {pageTitle === "projects" ? "" : <NavButton onClick={handleNavClick}>Projects</NavButton>}
-                {pageTitle === "resume" ? "" : <NavButton onClick={handleNavClick}>Resume</NavButton>}
-                {pageTitle === "contact" ? "" : <NavButton onClick={handleNavClick}>Contact</NavButton>}
+                {pageTitle === "skills" ? "" : <NavButton onKeyUp={handleKeyUp} onClick={handleNavClick}>Skills</NavButton>}
+                {pageTitle === "bio" ? "" : <NavButton onKeyUp={handleKeyUp} onClick={handleNavClick}>Bio</NavButton>}
+                {pageTitle === "projects" ? "" : <NavButton onKeyUp={handleKeyUp} onClick={handleNavClick}>Projects</NavButton>}
+                {pageTitle === "resume" ? "" : <NavButton onKeyUp={handleKeyUp} onClick={handleNavClick}>Resume</NavButton>}
+                {pageTitle === "contact" ? "" : <NavButton onKeyUp={handleKeyUp} onClick={handleNavClick}>Contact</NavButton>}
             </CenteredNavRow>
             <PageTitle>{pageTitle}</PageTitle>
         </CenteredFlexCol>
