@@ -9,7 +9,7 @@ function Resume() {
     return (
         <>
             <CenteredFlexRow>
-                <SkillAnchor href="./lucas-mace-web-dev-resume-2022.pdf" target="_blank">
+                <SkillAnchor href="./lucas-mace-web-dev-resume-2022-1.pdf" target="_blank">
                     <Skill title="Download" />
                 </SkillAnchor>
             </CenteredFlexRow>

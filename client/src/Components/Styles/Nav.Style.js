@@ -17,8 +17,7 @@ export const KeyboardUserContainer = styled.a`
     text-decoration: none;
     color: white;
     aspect-ratio: 1;
-    border: 0.5em solid #bfdcf8;;
-    transform: rotate(180deg);
+    transform: rotate(180deg)
     z-index: 2;
 
     transition-property: top, transform;
@@ -28,6 +27,9 @@ export const KeyboardUserContainer = styled.a`
     &:focus {
         top: 1rem ;
         transform: rotate(-12deg);
+        outline-color: #bfdcf8;
+        outline-style: solid;
+        outline-width: 5px;
     }
 `;
 

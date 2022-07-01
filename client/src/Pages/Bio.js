@@ -8,11 +8,11 @@ function Bio() {
         <>
             <Paragraph>Hello! My name is Lucas.</Paragraph>
             <Paragraph>I have over 6 years of professional development experience.
-                I am a Full Stack Web Developer who currently works as a Front End Web, React and UX/UI Developer
-                for Erik's Bike Shop, the largest (depending on how you ask) bicycle and Winter sports shop in America.
+                I am a Full Stack Web Developer who currently works as the Lead Front End Web, React and UX/UI Developer
+                for <Anchor href="https://www.eriksbikeshop.com" target="_blank" rel="noreferrer">Erik's Bike Shop</Anchor>, one of the largest bicycle and Winter sports shops in America.
             </Paragraph>
             <Paragraph>My favorite tech stack currently is React, GraphQL, Express and MySQL. If you're a bicycle nerd,
-                you may enjoy my <Anchor href="http://www.namethatpart.com/" target="_blank">Name That Part</Anchor> game
+                you may enjoy my <Anchor href="http://www.namethatpart.com/" target="_blank" rel="noreferrer">Name That Part</Anchor> game
                 that utilizes those technologies.
             </Paragraph>
             <Paragraph>Previous to my developer career I worked as a bicycle mechanic for 10 years. In my free time, I still
